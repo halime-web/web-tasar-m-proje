@@ -1,0 +1,231 @@
+/* Genel ayarlar */
+body {/* Body stili */
+    margin: 0;/* Sayfa kenar boşlukları kaldırıldı */
+    font-family: 'Segoe UI', sans-serif;/* Modern ve okunabilir font */
+    background-color: #fdf6f0;/* Yumuşak pastel arka plan */
+    color: #333;/* Okunabilir koyu metin rengi */
+}
+
+/* Menü */
+nav {/* Menü stili */
+    background-color: #e17055;/* Sıcak tonlarda arka plan */
+    display: flex;/* Flexbox ile düzenleme-- sayfada ki kutuları düzenli dizmemi sağlayan css yöntemi */
+    justify-content: space-between;/*menü içindekileri yan yana dizer*/
+    align-items: center;/* Dikey ortalama */
+    padding: 15px 40px;/* İç boşluk */
+}
+
+nav h2 {/* Başlık stili */
+    color: white;/* Başlık rengi */
+    margin: 0;/* Başlık kenar boşlukları kaldırıldı */
+}
+
+nav ul {/* Liste stili */
+    list-style: none;/* Madde işaretleri kaldırıldı */
+    margin: 0;/* Kenar boşlukları kaldırıldı */
+    padding: 0;/* İç boşluk kaldırıldı */
+
+}
+
+nav ul li {/* Liste öğesi stili */
+    display: inline;/* Liste öğeleri yan yana */
+    margin-left: 20px;/* Aralarına boşluk */
+}
+
+nav ul li a {/* Link stili */
+    color: white;/* Link rengi */
+    text-decoration: none;/* Alt çizgi kaldırıldı */
+    font-weight: bold;/* Kalın metin */
+}
+
+/* Tanıtım alanı */
+.intro { /* Tanıtım alanı stili */
+    text-align: center;/* Metin ortalama */
+    padding: 60px 20px;/* İç boşluk */
+}
+
+.intro h1 {/* Başlık stili */
+    font-size: 36px;/* Büyük başlık */
+    margin-bottom: 15px;/* Alt boşluk */
+}
+
+.intro p {/* Paragraf stili */
+    font-size: 18px;/* Okunabilir paragraf */
+    max-width: 700px;/* Maksimum genişlik */
+    margin: auto;/* Ortala */
+}
+
+/* Kart alanı */
+.cards {/* Kart alanı stili */
+    display: flex;/* Flexbox ile düzenleme */
+    gap: 25px;/* Kartlar arası boşluk */
+    width: 85%;/* Genişlik */
+    margin: 0 auto 60px;/* Ortala ve alt boşluk */
+}
+
+.card {/* Kart stili */
+    background-color: white;/* Kart arka planı */
+    border-radius: 15px;/* Yuvarlatılmış köşeler */
+    padding: 20px;/* İç boşluk */
+    text-align: center;/* Metin ortalama */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);/* Hafif gölge */
+}
+
+.card img {/* Kart içindeki resimler */
+    width: 100%;/* Resim genişliği */
+    border-radius: 12px;/* Yuvarlatılmış köşeler */
+    margin-bottom: 15px;/* Alt boşluk */
+}
+
+.card h3 {/* Kart başlık stili */
+    margin: 10px 0;/* Üst ve alt boşluk */
+    margin-bottom: 10px;/* Alt boşluk */
+}
+
+/* Alt alan */
+footer {/* Alt alan stili */
+    background-color: #f1e3d3;/* Açık tonlarda arka plan */
+    text-align: center;/* Metin ortalama */
+    padding: 15px;/* İç boşluk */
+    font-style: italic;/* İtalik metin */
+}
+/* Sayfa açıklaması */
+.page-desc {/* Sayfa açıklaması stili */
+    text-align: center;/* Metin ortalama */
+    padding: 40px 20px;/* İç boşluk */
+    margin-bottom: 40px;/* Alt boşluk */
+    font-size: 18px;/* Okunabilir paragraf */
+}
+
+/* Çiçek grubu */
+.flower-group {
+    margin-bottom: 50px;/* Alt boşluk */
+}
+
+.flower-group h2 {/* Başlık stili */
+    margin-bottom: 20px;/* Alt boşluk */
+    color: #e17055;/* Başlık rengi */
+}
+
+/* Grup içi kartlar */
+.group-cards {/* Kart grubu stili */
+    display: flex;/* Flexbox ile düzenleme */
+    gap: 20px;/* Kartlar arası boşluk */
+}
+
+
+
+/* Kartlar zaten vardı, aynen kullanılıyor */
+/* Kart içindeki resimler */
+.card img {
+    width: 100%;
+    height: 180px;          /* TÜM resimler aynı yükseklik */
+    object-fit: cover;     /* Oranı bozmadan kırpar */
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+/* Grup içi kartlar */
+
+.card {
+    background-color: white;/* Kart arka planı */
+    border-radius: 15px;/* Yuvarlatılmış köşeler */
+    padding: 20px;/* İç boşluk */
+    text-align: center;/* Metin ortalama */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);/* Hafif gölge */
+    width: 300px;   /* Kart genişliği sabit */
+}
+.group-cards {/* Kart grubu stili */
+    display: flex;/* Flexbox ile düzenleme */
+    gap: 20px;/* Kartlar arası boşluk */
+    flex-wrap: wrap;/* Satır kaydırma */
+}
+
+.card {
+    width: 300px;/* Kart genişliği sabit */
+}
+
+.card img {
+    width: 100%;/* Resim genişliği */
+    height: 180px;/* TÜM resimler aynı yükseklik */
+    object-fit: cover;/* Oranı bozmadan kırpar */
+}
+/* Gökkuşağı alanı */
+.rainbow {
+    display: flex;/* Flexbox ile düzenleme */
+    height: 80px;/* Yükseklik */
+}
+
+.r {/* Renk blokları */
+    flex: 1;/* Eşit genişlik */
+}
+
+.red { background-color: #e74c3c; }/* Renk blokları için renkler */
+.orange { background-color: #e67e22; }
+.yellow { background-color: #f1c40f; }/* Sarı */
+.green { background-color: #2ecc71; }
+.blue { background-color: #3498db; }
+.purple { background-color: #9b59b6; }
+
+/* Renk kartları */
+.color-cards {
+    display: flex;/* Flexbox ile düzenleme sayfadaki kutuları düzenli dizmemizi sağlayan css yöntemi */
+    flex-wrap: wrap;/* Satır kaydırma */
+    
+    gap: 20px;/* Kartlar arası boşluk */
+    margin-top: 40px;/* Üst boşluk */
+}
+
+.color-card {
+    background-color: white;/* Kart arka planı */
+    width: 250px;/* Kart genişliği */
+    padding: 15px;/* İç boşluk */
+    border-radius: 15px;/* Yuvarlatılmış köşeler */
+    text-align: center;/* Metin ortalama */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);/* Hafif gölge */
+}
+
+.color-card img {
+    width: 100%;/* Resim genişliği */
+    height: 160px;/* TÜM resimler aynı yükseklik */
+    object-fit: cover;/* Oranı bozmadan kırpar */
+    border-radius: 12px;/* Yuvarlatılmış köşeler */
+}
+/* Gökkuşağı görsel alanı */
+.rainbow-image {
+    position: relative;/* Göreceli konumlandırma */
+    width: 100%;/* Genişlik */
+    height: 300px;/* Yükseklik */
+    overflow: hidden;/* Taşmayı gizle */
+}
+
+.rainbow-image img {
+    width: 100%;/* Genişlik */
+    height: 100%;/* Yükseklik */
+    object-fit: cover; /* Görseli bozmadan kaplar */
+}
+
+/* Gökkuşağı üzerindeki yazı */
+.rainbow-text {/* Yazı alanı stili */
+    position: absolute;/* Mutlak konumlandırma */
+    top: 50%;/* Dikey ortalama */
+    left: 50%;/* Yatay ortalama */
+    transform: translate(-50%, -50%);/* Tam ortalama */
+    background-color: rgba(255, 255, 255, 0.8);/* Yarı saydam arka plan */
+    padding: 20px 30px;/* İç boşluk */
+    border-radius: 15px;/* Yuvarlatılmış köşeler */
+    text-align: center;/* Metin ortalama */
+}
+
+.rainbow-text h1 {/* Başlık stili */
+    margin: 0;/* Kenar boşlukları kaldırıldı */
+    font-size: 32px;/* Büyük başlık */
+}
+
+.rainbow-text p {/* Paragraf stili */
+    margin-top: 8px;/* Üst boşluk */
+    font-size: 16px;/* Okunabilir paragraf */
+}
+.card p {/* Kart içindeki paragraflar */
+    margin: 6px 0;/* Üst ve alt boşluk */
+    font-size: 14px;/* Okunabilir paragraf */
+}
